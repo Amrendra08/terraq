@@ -7,5 +7,5 @@ RUN mvn package
 
 FROM openjdk:11
 WORKDIR /app
-COPY --from=build /app/target/*.jar .
-CMD ["java", "-jar","*.jar"]
+COPY --from=build /app/target/jb-hello-world-maven-0.2.0.jar .
+CMD ["java", "-jar","jb-hello-world-maven-0.2.0.jar"]
