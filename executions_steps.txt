@@ -17,7 +17,7 @@
 
 ## Docker steps
 - export DOCKER_BUILDKIT=0  # used to disable legacy builder
-- cd 1_2_Docker_+_Kubernetes
+- cd 1_2_Docker_+_Kubernetes/java-hello-world-with-maven-master
 - docker build . -t test-img
 
 ## python script to check public s3 buckets
