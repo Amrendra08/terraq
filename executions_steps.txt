@@ -17,7 +17,7 @@
 
 ## Docker steps
 - cd 1_2_Docker_+_Kubernetes/java-hello-world-with-maven-master
-- export DOCKER_BUILDKIT=0  && docker build . -t test-img  # DOCKER_BUILDKIT=0 is used for using depricated build command
+- export DOCKER_BUILDKIT=0  && docker build --no-cache . -t test-img  # DOCKER_BUILDKIT=0 is used for using depricated build command
 
 ## python script to check public s3 buckets
 - navigate to dir 1_3_pythonQ
