@@ -1,0 +1,25 @@
+## Pre-requisites
+
+# packages required
+- aws-cli = 2.15.4
+- terraform = v1.6.6
+- boto3
+- docker = 24.0.7
+- python3.6 and higher
+
+## Terraform executions steps
+- aws configure # configure aws credentials
+- create a ssh key using command 'ssh-keygen' that will be used for ec2 creation
+- Navigate to dir 1_1_terraformQ
+- terraform init   # initialise the project
+- terraform plan   # check the plan of resource creation
+- terraform apply  # to deploy, it will ask for approval. Follow the steps accordingly
+
+## Docker steps
+- export DOCKER_BUILDKIT=0  # used to disable legacy builder
+- cd 1_2_Docker_+_Kubernetes
+- docker build . -t test-img
+
+## python script to check public s3 buckets
+- navigate to dir 1_3_pythonQ
+- python3 list_all_public_s2_buckets.py
